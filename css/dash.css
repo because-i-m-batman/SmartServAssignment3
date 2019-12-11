@@ -1,0 +1,70 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* margin: auto; */
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+}
+
+#body2 {
+    background-color: rgb(238, 229, 229);
+}
+
+#heading {
+    padding: 30px;
+}
+
+#sel {
+    float: right;
+    margin-left: 10px;
+}
+
+.leftside,
+.rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .leftside,
+    .rightside {
+        height: 100hv;
+    }
+}
+
+.chart-skills {
+    position: relative;
+    width: 8vw;
+    height: 38.5vh;
+    margin-top: 10vh;
+}
+
+.chart-skills::before,
+.chart-skills::after {
+    position: absolute;
+}
+
+.chart-skills::before {
+    content: '100%';
+    /* width: inherit; */
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 40px;
+    width: 21vw;
+    height: 30vh;
+    border: 45px solid rgba(14, 211, 47, 0.3);
+    border-bottom: none;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
+}
+
+.chart-skills::after {
+    content: 'Revenue $14K';
+    /* left: 50%; */
+    left: 85%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: cadetblue;
+}
